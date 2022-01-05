@@ -9,26 +9,33 @@ public class CoordinateLabeler : MonoBehaviour
     TextMeshPro label;
     Vector2Int coords = new Vector2Int();
 
+
     private void Awake()
     {
         label = transform.GetComponent<TextMeshPro>();
+        DisplayCoordinates();
+        UpdateObjectName();
     }
 
     private void Update()
     {
-        label = transform.GetComponent<TextMeshPro>();
-
         if (!Application.isPlaying)
         {
             DisplayCoordinates();
+            UpdateObjectName();
         }
     }
 
     private void DisplayCoordinates()
     {
-        coords.x = Mathf.RoundToInt(transform.parent.position.x);
-        coords.y = Mathf.RoundToInt(transform.parent.position.z);
+        coords.x = Mathf.RoundToInt(transform.parent.position.x / 10);
+        coords.y = Mathf.RoundToInt(transform.parent.position.z / 10);
 
         label.text = coords.ToString();
+    }
+
+    private void UpdateObjectName()
+    {
+        transform.parent.name = coords.ToString();
     }
 }
