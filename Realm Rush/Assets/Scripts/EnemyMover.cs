@@ -8,7 +8,8 @@ public class EnemyMover : MonoBehaviour
     List<Waypoint> path = new List<Waypoint>();
 
     [SerializeField]
-    private float waitTime;
+    [Range(0.1f, 4f)]
+    private float speed = 1f;
 
     private void Start()
     {
@@ -19,10 +20,16 @@ public class EnemyMover : MonoBehaviour
     {
         foreach (Waypoint waypoint in path)
         {
-            Debug.Log(waypoint.name);
+            Vector3 startPos = transform.position;
+            Vector3 endingPos = waypoint.transform.position;
+            float travelPercent = 0f;
 
-            transform.position = waypoint.transform.position;
-            yield return new WaitForSeconds(waitTime);
+            while (travelPercent < 1f)
+            {
+                transform.position = Vector3.Lerp(startPos, endingPos, travelPercent);
+                travelPercent += Time.deltaTime * speed;
+                yield return new WaitForEndOfFrame();
+            }
         }
     }
 }
