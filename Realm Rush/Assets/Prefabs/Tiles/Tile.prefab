@@ -327,3 +327,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61218c34b20020946a7f9dc9ce1bd635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  blockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
