@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -34,6 +32,23 @@ public class CoordinateLabeler : MonoBehaviour
         ToggleLabels();
     }
 
+
+
+    private void DisplayCoordinates()
+    {
+        coords.x = Mathf.RoundToInt(transform.parent.position.x / 10);
+        coords.y = Mathf.RoundToInt(transform.parent.position.z / 10);
+
+        label.text = coords.ToString();
+    }
+
+    private void UpdateObjectName()
+    {
+        transform.parent.name = coords.ToString();
+    }
+
+
+    // Debug methods
     private void ColorCoordinates()
     {
         if (waypoint.IsPlaceable)
@@ -54,16 +69,4 @@ public class CoordinateLabeler : MonoBehaviour
         }
     }
 
-    private void DisplayCoordinates()
-    {
-        coords.x = Mathf.RoundToInt(transform.parent.position.x / 10);
-        coords.y = Mathf.RoundToInt(transform.parent.position.z / 10);
-
-        label.text = coords.ToString();
-    }
-
-    private void UpdateObjectName()
-    {
-        transform.parent.name = coords.ToString();
-    }
 }
