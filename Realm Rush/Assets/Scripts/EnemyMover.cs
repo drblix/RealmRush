@@ -11,6 +11,13 @@ public class EnemyMover : MonoBehaviour
     [Range(0.1f, 4f)]
     private float speed = 1f;
 
+    private Enemy enemy;
+
+    private void Awake()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
     private void OnEnable()
     {
         FindPath();
@@ -54,7 +61,7 @@ public class EnemyMover : MonoBehaviour
             }
         }
 
+        enemy.StealGold();
         gameObject.SetActive(false);
-        ReturnToStart();
     }
 }

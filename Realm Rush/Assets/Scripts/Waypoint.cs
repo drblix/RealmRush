@@ -6,18 +6,20 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _ballistaTower;
+    private TowerScript towerScript;
 
     [SerializeField]
     private bool isPlaceable;
     public bool IsPlaceable { get { return isPlaceable; } }
 
+
     private void OnMouseDown()
     {
         if (isPlaceable)
         {
-            Instantiate(_ballistaTower, transform.position, Quaternion.identity);
-            isPlaceable = false;
+            bool isPlaced = towerScript.CreateTower(towerScript, transform.position);
+
+            isPlaceable = !isPlaced;
         }
     }
 }

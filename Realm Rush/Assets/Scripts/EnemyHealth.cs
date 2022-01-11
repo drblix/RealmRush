@@ -10,6 +10,13 @@ public class EnemyHealth : MonoBehaviour
 
     private int _currentHitPoints;
 
+    private Enemy enemy;
+
+    private void Awake()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
     private void OnEnable()
     {
         _currentHitPoints = _maxHitPoints;
@@ -26,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (_currentHitPoints <= 0)
         {
+            enemy.RewardGold();
             gameObject.SetActive(false);
         }
     }
