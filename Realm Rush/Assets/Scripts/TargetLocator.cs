@@ -13,7 +13,7 @@ public class TargetLocator : MonoBehaviour
 
     [SerializeField] [Range(5f, 50f)] [Tooltip("Range at which the tower fires at incoming enemies")]
     private float _range = 25f;
-    [SerializeField] [Range(0.1f, 4f)] [Tooltip("The rate at which the tower fires (RATE IS NOT IN SECONDS, DEPENDENT ON PARTICLE SYSTEM RATE))")]
+    [SerializeField] [Range(0.1f, 2.5f)] [Tooltip("The rate at which the tower fires (RATE IS NOT IN SECONDS, DEPENDENT ON PARTICLE SYSTEM RATE))")]
     private float _firingRate = 0.85f;
 
     private Transform _target;
@@ -24,7 +24,6 @@ public class TargetLocator : MonoBehaviour
     private void Start()
     {
         var projectileEmission = _projectileSystem.emission;
-
         projectileEmission.rateOverTime = _firingRate;
     }
 
