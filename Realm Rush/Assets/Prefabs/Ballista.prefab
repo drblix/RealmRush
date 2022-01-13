@@ -49,6 +49,7 @@ MonoBehaviour:
   _weapon: {fileID: 3144582324300694500}
   _projectileSystem: {fileID: 1212796263886977461}
   _range: 15
+  _firingRate: 0.85
 --- !u!114 &868200982952971062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8cdffb69a1a77d4f939940c02b513bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 50
 --- !u!1 &4499317976382282411
 GameObject:
   m_ObjectHideFlags: 0

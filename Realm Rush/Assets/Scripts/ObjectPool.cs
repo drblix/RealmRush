@@ -6,9 +6,9 @@ public class ObjectPool : MonoBehaviour
 {
     [SerializeField]
     private GameObject _ram;
-    [SerializeField]
+    [SerializeField] [Range(0, 50)]
     private int _poolSize = 5;
-    [SerializeField] [Range(1f, 5f)]
+    [SerializeField] [Range(0.25f, 25f)]
     private float _spawnDelay = 1.5f;
 
     private GameObject[] pool;
