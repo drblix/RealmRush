@@ -49,7 +49,7 @@ MonoBehaviour:
   _weapon: {fileID: 3144582324300694500}
   _projectileSystem: {fileID: 1212796263886977461}
   _range: 15
-  _firingRate: 0.85
+  _firingRate: 1
 --- !u!114 &868200982952971062
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TowerScript : MonoBehaviour
@@ -7,9 +5,11 @@ public class TowerScript : MonoBehaviour
     [SerializeField]
     private int cost = 50;
 
+
     public bool CreateTower(TowerScript tower, Vector3 position)
     {
         BankScript bank = FindObjectOfType<BankScript>();
+        Transform towersPool = GameObject.Find("TowersPool").transform;
 
         if (bank == null)
         {
@@ -18,7 +18,7 @@ public class TowerScript : MonoBehaviour
 
         if (bank.CurrentBalance >= cost)
         {
-            Instantiate(tower.gameObject, position, Quaternion.identity);
+            Instantiate(tower.gameObject, position, Quaternion.identity, towersPool);
             bank.WithdrawCoins(cost);
             return true;
         }

@@ -321,6 +321,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/BankScript.cs"
+"Assets/Scripts/CameraScript.cs"
 "Assets/Scripts/CoordinateLabeler.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/EnemyHealth.cs"

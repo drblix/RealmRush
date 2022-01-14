@@ -15,11 +15,11 @@ C:/Users/d4.4s/Documents/GitHub/RealmRush/Realm Rush
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62200
+51742
 Successfully changed project path to: C:/Users/d4.4s/Documents/GitHub/RealmRush/Realm Rush
 C:/Users/d4.4s/Documents/GitHub/RealmRush/Realm Rush
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 67.10 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 69.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,93 +35,370 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001714 seconds.
+Registered in 0.002075 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 68.60 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 73.09 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
+- Completed reload, in  1.322 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002149 seconds.
+Registered in 0.002727 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.935 seconds
+- Completed reload, in  0.917 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2698 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.3 MB.
-System memory in use after: 101.5 MB.
+System memory in use before: 101.4 MB.
+System memory in use after: 101.6 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3152.
-Total: 1.869100 ms (FindLiveObjects: 0.201500 ms CreateObjectMapping: 0.119400 ms MarkObjects: 1.471500 ms  DeleteObjects: 0.075700 ms)
+Total: 1.824500 ms (FindLiveObjects: 0.205200 ms CreateObjectMapping: 0.122100 ms MarkObjects: 1.425900 ms  DeleteObjects: 0.070300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/TargetLocator.cs
-  artifactKey: Guid(1af6209c31bd61f489124c0ec2af1359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TargetLocator.cs using Guid(1af6209c31bd61f489124c0ec2af1359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f003dfa084eeed4d0933b07b3b6541') in 0.065779 seconds 
+  path: Assets/Scripts/BankScript.cs
+  artifactKey: Guid(3544e3caeb52a3c4f8bd5b7444cf49c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BankScript.cs using Guid(3544e3caeb52a3c4f8bd5b7444cf49c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd2a0fb7a41d3074e6c8c22cd09c68a7') in 0.093071 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(30ba3e59e1ea9b347b9486e7ac74cbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(30ba3e59e1ea9b347b9486e7ac74cbf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95fbeb07ec82d5bfbc38f51e76aeffd6') in 0.002035 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.887909 seconds.
-  path: Assets/Prefabs/Ballista.prefab
-  artifactKey: Guid(8a965e088bae16643aab3d07ccfd5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ballista.prefab using Guid(8a965e088bae16643aab3d07ccfd5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ccff36c499a7f0690f58ef43c94d392') in 0.080119 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.134411 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Bolt.obj
-  artifactKey: Guid(77a5e84b782c81648b95ce756f4622a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Bolt.obj using Guid(77a5e84b782c81648b95ce756f4622a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05993694d4750de8dfaf337890c11825') in 0.156605 seconds 
+  Time since last request: 293.104930 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(4dc96c284ee3e1c4c8230e123a5abe38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(4dc96c284ee3e1c4c8230e123a5abe38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4042e3b6170a289381c7a086d3c2da9f') in 0.002648 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002108 seconds.
+Registered in 0.002391 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.857 seconds
+- Completed reload, in  0.854 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.1 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3154.
+Total: 2.224900 ms (FindLiveObjects: 0.295800 ms CreateObjectMapping: 0.192700 ms MarkObjects: 1.678300 ms  DeleteObjects: 0.056400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 432.617468 seconds.
+  path: Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner270.prefab
+  artifactKey: Guid(6ea0e04a754817144a3de92ee4c99349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner270.prefab using Guid(6ea0e04a754817144a3de92ee4c99349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9911d4a2916e6f422cb0d1ec44a43331') in 0.162023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.394621 seconds.
+  path: Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner180.prefab
+  artifactKey: Guid(05b51e25b5336ed408dfb91bccd0ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner180.prefab using Guid(05b51e25b5336ed408dfb91bccd0ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8897aa501bbf8cbac8aece421849bc') in 0.031848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 405.780851 seconds.
+  path: Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner.prefab
+  artifactKey: Guid(e18900521d49abe4eaaeea16752ef5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner.prefab using Guid(e18900521d49abe4eaaeea16752ef5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0306d9fd9a98491f2b61aca4f7a72db2') in 0.038604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.790946 seconds.
+  path: Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner90.prefab
+  artifactKey: Guid(cef88b60cb5e0344ebd47be3c4a3dd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner90.prefab using Guid(cef88b60cb5e0344ebd47be3c4a3dd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9755aea655d6e0d4ba2271da51fef7') in 0.052989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.563605 seconds.
+  path: Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner270.prefab
+  artifactKey: Guid(6ea0e04a754817144a3de92ee4c99349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner270.prefab using Guid(6ea0e04a754817144a3de92ee4c99349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34c6b8a4f29f5a75946e1556411d71d') in 0.031111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.379906 seconds.
+  path: Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner180.prefab
+  artifactKey: Guid(05b51e25b5336ed408dfb91bccd0ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Environment/Tiles/OceanTiles/Shore_InwardCorner180.prefab using Guid(05b51e25b5336ed408dfb91bccd0ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6163f9db6d4ace3b71aa2680584bcd') in 0.031153 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002662 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.925 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.8 MB.
+System memory in use after: 104.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3163.
+Total: 2.178700 ms (FindLiveObjects: 0.217400 ms CreateObjectMapping: 0.141400 ms MarkObjects: 1.758000 ms  DeleteObjects: 0.060500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002308 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.956 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.0 MB.
-System memory in use after: 104.2 MB.
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3197.
-Total: 1.712300 ms (FindLiveObjects: 0.196100 ms CreateObjectMapping: 0.108300 ms MarkObjects: 1.363600 ms  DeleteObjects: 0.043400 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3165.
+Total: 1.803900 ms (FindLiveObjects: 0.200500 ms CreateObjectMapping: 0.132700 ms MarkObjects: 1.421400 ms  DeleteObjects: 0.047900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003256 seconds.
+Registered in 0.002272 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.839 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3167.
+Total: 1.773900 ms (FindLiveObjects: 0.204000 ms CreateObjectMapping: 0.124500 ms MarkObjects: 1.399500 ms  DeleteObjects: 0.044900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002343 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3169.
+Total: 1.733500 ms (FindLiveObjects: 0.209500 ms CreateObjectMapping: 0.120500 ms MarkObjects: 1.354900 ms  DeleteObjects: 0.047100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002469 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3171.
+Total: 2.570900 ms (FindLiveObjects: 0.221500 ms CreateObjectMapping: 0.136800 ms MarkObjects: 2.147200 ms  DeleteObjects: 0.064400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002321 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3174.
+Total: 1.905900 ms (FindLiveObjects: 0.219100 ms CreateObjectMapping: 0.146700 ms MarkObjects: 1.482100 ms  DeleteObjects: 0.056500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002488 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.837 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3176.
+Total: 1.965700 ms (FindLiveObjects: 0.219200 ms CreateObjectMapping: 0.151900 ms MarkObjects: 1.545000 ms  DeleteObjects: 0.048900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002377 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3178.
+Total: 1.758200 ms (FindLiveObjects: 0.215400 ms CreateObjectMapping: 0.135400 ms MarkObjects: 1.358500 ms  DeleteObjects: 0.047700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002660 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3180.
+Total: 2.410800 ms (FindLiveObjects: 0.210200 ms CreateObjectMapping: 0.132700 ms MarkObjects: 2.012400 ms  DeleteObjects: 0.054100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002367 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.789 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.9 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3182.
+Total: 2.627900 ms (FindLiveObjects: 0.229500 ms CreateObjectMapping: 0.142200 ms MarkObjects: 2.192300 ms  DeleteObjects: 0.062900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002321 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.826 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3184.
+Total: 1.730200 ms (FindLiveObjects: 0.205800 ms CreateObjectMapping: 0.134000 ms MarkObjects: 1.345900 ms  DeleteObjects: 0.043800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002351 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -130,67 +407,487 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.807 seconds
+- Completed reload, in  0.919 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.1 MB.
-System memory in use after: 104.3 MB.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.1 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3199.
-Total: 2.416400 ms (FindLiveObjects: 0.375700 ms CreateObjectMapping: 0.217500 ms MarkObjects: 1.768800 ms  DeleteObjects: 0.052900 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3186.
+Total: 1.888600 ms (FindLiveObjects: 0.214700 ms CreateObjectMapping: 0.166900 ms MarkObjects: 1.456200 ms  DeleteObjects: 0.049800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002195 seconds.
+Registered in 0.002428 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3188.
+Total: 1.859000 ms (FindLiveObjects: 0.213600 ms CreateObjectMapping: 0.128800 ms MarkObjects: 1.468000 ms  DeleteObjects: 0.047800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003082 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3190.
+Total: 1.882900 ms (FindLiveObjects: 0.209100 ms CreateObjectMapping: 0.124700 ms MarkObjects: 1.479300 ms  DeleteObjects: 0.068000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002299 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.862 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3192.
+Total: 1.751400 ms (FindLiveObjects: 0.200200 ms CreateObjectMapping: 0.137300 ms MarkObjects: 1.369500 ms  DeleteObjects: 0.043700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002352 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.816 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3194.
+Total: 2.000900 ms (FindLiveObjects: 0.207200 ms CreateObjectMapping: 0.135900 ms MarkObjects: 1.606900 ms  DeleteObjects: 0.049600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002653 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.838 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3196.
+Total: 1.768600 ms (FindLiveObjects: 0.210100 ms CreateObjectMapping: 0.128400 ms MarkObjects: 1.385400 ms  DeleteObjects: 0.043800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003391 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3198.
+Total: 3.158600 ms (FindLiveObjects: 0.315000 ms CreateObjectMapping: 0.171800 ms MarkObjects: 2.593500 ms  DeleteObjects: 0.076600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002313 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3200.
+Total: 1.831300 ms (FindLiveObjects: 0.203900 ms CreateObjectMapping: 0.128400 ms MarkObjects: 1.451600 ms  DeleteObjects: 0.046200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003204 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.961 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3202.
+Total: 1.802000 ms (FindLiveObjects: 0.209000 ms CreateObjectMapping: 0.127600 ms MarkObjects: 1.417800 ms  DeleteObjects: 0.046400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002418 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.821 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3204.
+Total: 1.795100 ms (FindLiveObjects: 0.212400 ms CreateObjectMapping: 0.131700 ms MarkObjects: 1.404000 ms  DeleteObjects: 0.046400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002842 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3206.
+Total: 1.752900 ms (FindLiveObjects: 0.194100 ms CreateObjectMapping: 0.108300 ms MarkObjects: 1.404300 ms  DeleteObjects: 0.045300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003215 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3208.
+Total: 1.813700 ms (FindLiveObjects: 0.211200 ms CreateObjectMapping: 0.128000 ms MarkObjects: 1.425300 ms  DeleteObjects: 0.048100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1960.411655 seconds.
+  path: Assets/Scripts/TowerScript.cs
+  artifactKey: Guid(f8cdffb69a1a77d4f939940c02b513bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TowerScript.cs using Guid(f8cdffb69a1a77d4f939940c02b513bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411f8e39ec324d9b1dc2a16f9050b3b3') in 0.005665 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002598 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.786 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3210.
+Total: 1.790800 ms (FindLiveObjects: 0.209700 ms CreateObjectMapping: 0.119300 ms MarkObjects: 1.413100 ms  DeleteObjects: 0.047600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003258 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3212.
+Total: 1.784500 ms (FindLiveObjects: 0.215700 ms CreateObjectMapping: 0.126200 ms MarkObjects: 1.393000 ms  DeleteObjects: 0.048300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002645 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.788 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3214.
+Total: 1.912500 ms (FindLiveObjects: 0.208500 ms CreateObjectMapping: 0.128200 ms MarkObjects: 1.526200 ms  DeleteObjects: 0.048600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002373 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.915 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3216.
+Total: 1.769400 ms (FindLiveObjects: 0.214100 ms CreateObjectMapping: 0.125000 ms MarkObjects: 1.381300 ms  DeleteObjects: 0.047800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003171 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.799 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3218.
+Total: 1.797200 ms (FindLiveObjects: 0.205000 ms CreateObjectMapping: 0.129300 ms MarkObjects: 1.417200 ms  DeleteObjects: 0.044900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002389 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.891 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.0 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3220.
+Total: 1.887000 ms (FindLiveObjects: 0.224600 ms CreateObjectMapping: 0.134300 ms MarkObjects: 1.476500 ms  DeleteObjects: 0.050200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002285 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.830 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 104.1 MB.
 System memory in use after: 104.3 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3201.
-Total: 1.849800 ms (FindLiveObjects: 0.229700 ms CreateObjectMapping: 0.141200 ms MarkObjects: 1.432200 ms  DeleteObjects: 0.045400 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3222.
+Total: 2.180700 ms (FindLiveObjects: 0.233300 ms CreateObjectMapping: 0.142800 ms MarkObjects: 1.753500 ms  DeleteObjects: 0.049900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002150 seconds.
+Registered in 0.002457 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.766 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.797 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 104.1 MB.
 System memory in use after: 104.3 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3203.
-Total: 1.867500 ms (FindLiveObjects: 0.204400 ms CreateObjectMapping: 0.134100 ms MarkObjects: 1.481900 ms  DeleteObjects: 0.046400 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3224.
+Total: 1.764600 ms (FindLiveObjects: 0.208800 ms CreateObjectMapping: 0.134900 ms MarkObjects: 1.369400 ms  DeleteObjects: 0.050400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002207 seconds.
+Registered in 0.002547 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.781 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3226.
+Total: 1.943600 ms (FindLiveObjects: 0.210100 ms CreateObjectMapping: 0.118500 ms MarkObjects: 1.564600 ms  DeleteObjects: 0.049000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002349 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -199,21 +896,270 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.817 seconds
+- Completed reload, in  0.799 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 104.1 MB.
 System memory in use after: 104.3 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3205.
-Total: 1.960000 ms (FindLiveObjects: 0.216900 ms CreateObjectMapping: 0.142900 ms MarkObjects: 1.544700 ms  DeleteObjects: 0.054200 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3228.
+Total: 1.750900 ms (FindLiveObjects: 0.223400 ms CreateObjectMapping: 0.127600 ms MarkObjects: 1.350200 ms  DeleteObjects: 0.048900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002110 seconds.
+Registered in 0.002366 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.880 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3230.
+Total: 1.878400 ms (FindLiveObjects: 0.220700 ms CreateObjectMapping: 0.133000 ms MarkObjects: 1.481000 ms  DeleteObjects: 0.042900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002618 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.941 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3232.
+Total: 1.943600 ms (FindLiveObjects: 0.233300 ms CreateObjectMapping: 0.141300 ms MarkObjects: 1.516600 ms  DeleteObjects: 0.051300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002457 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3234.
+Total: 1.892800 ms (FindLiveObjects: 0.236600 ms CreateObjectMapping: 0.139600 ms MarkObjects: 1.460100 ms  DeleteObjects: 0.055200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002484 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.768 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3236.
+Total: 1.777200 ms (FindLiveObjects: 0.214500 ms CreateObjectMapping: 0.134900 ms MarkObjects: 1.373600 ms  DeleteObjects: 0.052500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1118.588515 seconds.
+  path: Assets/Prefabs/PlayerCamera.prefab
+  artifactKey: Guid(72cb7b987c3d0ac48b17688f5d8efe98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerCamera.prefab using Guid(72cb7b987c3d0ac48b17688f5d8efe98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c09041c3fa07a7156223e9a1b443aa9') in 0.027532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.011434 seconds.
+  path: Assets/AssetPacks/VoxelCastle/Models/Ballisa_Base.png
+  artifactKey: Guid(f7d44a55e98043e4d8cea381547ff757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/VoxelCastle/Models/Ballisa_Base.png using Guid(f7d44a55e98043e4d8cea381547ff757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd1ee8dfb41f172f670514abf5fe228') in 0.095126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/AssetPacks/VoxelCastle/Models/Ballisa_Top.png
+  artifactKey: Guid(a1a9a2db362196f41b8441addbcc0c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/VoxelCastle/Models/Ballisa_Top.png using Guid(a1a9a2db362196f41b8441addbcc0c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1b00dffae2e2ab9248c1a21d719b44') in 0.005723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Prefabs/Bank.prefab
+  artifactKey: Guid(4f98138b82e130f48bb0a9de03b98d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bank.prefab using Guid(4f98138b82e130f48bb0a9de03b98d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8faa1b2bb16b38da8874761f43815af') in 0.004276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Prefabs/Ballista.prefab
+  artifactKey: Guid(8a965e088bae16643aab3d07ccfd5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ballista.prefab using Guid(8a965e088bae16643aab3d07ccfd5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '267031c45786773a784e6869cd687948') in 0.027550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.538345 seconds.
+  path: Assets/AssetPacks/VoxelCastle/Models/Bolt.png
+  artifactKey: Guid(f168fa85f7662a84abd6633f70987ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/VoxelCastle/Models/Bolt.png using Guid(f168fa85f7662a84abd6633f70987ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06ecb93b5aa746463a65ac82035576c') in 0.046603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.090684 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(0cbcb8c825026c94b908fcf1ecd0ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(0cbcb8c825026c94b908fcf1ecd0ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e5807f6a308d88af60e5b436522338') in 0.081767 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002381 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2684 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.4 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3286.
+Total: 1.831000 ms (FindLiveObjects: 0.215700 ms CreateObjectMapping: 0.122400 ms MarkObjects: 1.437300 ms  DeleteObjects: 0.054800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002330 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3288.
+Total: 2.076600 ms (FindLiveObjects: 0.246100 ms CreateObjectMapping: 0.119600 ms MarkObjects: 1.656800 ms  DeleteObjects: 0.053400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002324 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3290.
+Total: 1.856900 ms (FindLiveObjects: 0.212000 ms CreateObjectMapping: 0.116900 ms MarkObjects: 1.479200 ms  DeleteObjects: 0.048100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002384 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.818 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3292.
+Total: 1.912100 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.138300 ms MarkObjects: 1.495400 ms  DeleteObjects: 0.047600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003351 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.812 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3294.
+Total: 1.873700 ms (FindLiveObjects: 0.227900 ms CreateObjectMapping: 0.132500 ms MarkObjects: 1.463300 ms  DeleteObjects: 0.049300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002718 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -222,573 +1168,424 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.789 seconds
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.3 MB.
+System memory in use after: 105.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3296.
+Total: 1.853100 ms (FindLiveObjects: 0.219500 ms CreateObjectMapping: 0.132000 ms MarkObjects: 1.453400 ms  DeleteObjects: 0.047400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002325 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.797 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.4 MB.
+System memory in use after: 105.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3298.
+Total: 2.111900 ms (FindLiveObjects: 0.236300 ms CreateObjectMapping: 0.145500 ms MarkObjects: 1.678700 ms  DeleteObjects: 0.050400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002354 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.777 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2680 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.1 MB.
-System memory in use after: 104.3 MB.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.4 MB.
+System memory in use after: 105.6 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3207.
-Total: 1.849600 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.124900 ms MarkObjects: 1.448800 ms  DeleteObjects: 0.047900 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3300.
+Total: 1.927600 ms (FindLiveObjects: 0.228700 ms CreateObjectMapping: 0.136300 ms MarkObjects: 1.515000 ms  DeleteObjects: 0.046800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002413 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.4 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3302.
+Total: 2.123200 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.135000 ms MarkObjects: 1.684500 ms  DeleteObjects: 0.055500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002596 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.4 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3304.
+Total: 1.771700 ms (FindLiveObjects: 0.212700 ms CreateObjectMapping: 0.118100 ms MarkObjects: 1.393900 ms  DeleteObjects: 0.046300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 230.967806 seconds.
-  path: Assets/Prefabs/Tiles
-  artifactKey: Guid(edbf8bde28a9c6a40a66b19e5bf65916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles using Guid(edbf8bde28a9c6a40a66b19e5bf65916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ba9c602397fcd04da883ff50456f2b') in 0.007455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.849386 seconds.
-  path: Assets/Prefabs/Tiles/Path_RoadCorner.prefab
-  artifactKey: Guid(e9c834402da763f4993d4108e372dddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Path_RoadCorner.prefab using Guid(e9c834402da763f4993d4108e372dddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deaea8596b6f92e7e398c20f8c939e46') in 0.111162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.008227 seconds.
-  path: Assets/Prefabs/Tiles/Path_RoadCorner180.prefab
-  artifactKey: Guid(491a3ba5d008c2847bdf16bc9f9499c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Path_RoadCorner180.prefab using Guid(491a3ba5d008c2847bdf16bc9f9499c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98a4117e1a1e984749448d67db85da9') in 0.037911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 138.112695 seconds.
-  path: Assets/Prefabs/Tiles/Tile.prefab
-  artifactKey: Guid(51d589b5104141246acf4d95ec903d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile.prefab using Guid(51d589b5104141246acf4d95ec903d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efc44def0c266d8b077e8fefc158f0e') in 0.032829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.221335 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Road_Corner.prefab
-  artifactKey: Guid(7f00dff95729de9419a7a7c73f5e038f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Road_Corner.prefab using Guid(7f00dff95729de9419a7a7c73f5e038f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d5c0e803612d48639fbe8db5099ebd') in 0.008775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.811605 seconds.
-  path: Assets/Prefabs/Tiles/Path_RoadStraight90.prefab
-  artifactKey: Guid(17f9a4bf2f014b142aafff9bd5e3b57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Path_RoadStraight90.prefab using Guid(17f9a4bf2f014b142aafff9bd5e3b57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e04fa0cb44a0e31bf25fe36177a322') in 0.032516 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.282123 seconds.
-  path: Assets/Prefabs/Tiles/Path_RoadStraight.prefab
-  artifactKey: Guid(c1d357c86b8b29344ac44523bfe8a891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Path_RoadStraight.prefab using Guid(c1d357c86b8b29344ac44523bfe8a891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0308875c2fcd894fd7b7d2de8b2e579') in 0.032652 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.700788 seconds.
-  path: Assets/Prefabs/Tiles/Path_RoadCorner90.prefab
-  artifactKey: Guid(374e09f50ed4bcd49929331e61eb043b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Path_RoadCorner90.prefab using Guid(374e09f50ed4bcd49929331e61eb043b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af661a42618c5153eb4fc9691e6d5de1') in 0.032799 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.741008 seconds.
-  path: Assets/Prefabs/Tiles/Path_RoadCorner270.prefab
-  artifactKey: Guid(25f7acb75b483d14996cac75cfbbb12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Path_RoadCorner270.prefab using Guid(25f7acb75b483d14996cac75cfbbb12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a08b8bec7ba37a5f7461ac8b37e8e8') in 0.032138 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.497105 seconds.
-  path: Assets/Prefabs/Tiles/OceanShore.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanShore.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ae0cad0689b322925388a2e1a17545') in 0.032955 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.473264 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Road_Corner.obj
-  artifactKey: Guid(626410dc07212d749823da2540a223bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Road_Corner.obj using Guid(626410dc07212d749823da2540a223bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528b2c8322eec2f552075f05187ea3a4') in 0.045188 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Water_Open.obj
-  artifactKey: Guid(a847eae99d42cdf49b01d8ca9f52e595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Water_Open.obj using Guid(a847eae99d42cdf49b01d8ca9f52e595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9160c1166f48e521887deaf71c11f80') in 0.022571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Gate_1.obj
-  artifactKey: Guid(ed0d4b88051579a47a065eda53cf9480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Gate_1.obj using Guid(ed0d4b88051579a47a065eda53cf9480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a7404311174f82783a0a59811ed6eb') in 0.019294 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Ram.obj
-  artifactKey: Guid(0eaf0955d0035664c87a3d4177a41887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Ram.obj using Guid(0eaf0955d0035664c87a3d4177a41887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db9cf10a59357245118bb4d37ed82b0') in 0.018187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Wall_Straight.obj
-  artifactKey: Guid(0c67890f22519734398ef6e81ae7288c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Wall_Straight.obj using Guid(0c67890f22519734398ef6e81ae7288c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3302acf42d116f0a4f2e4e371c9f83af') in 0.017201 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Gate_2.obj
-  artifactKey: Guid(a592389a4cc504149996122820b6be3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Gate_2.obj using Guid(a592389a4cc504149996122820b6be3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d629fbcd4d0621b8ec35c906bd55c6e') in 0.017676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Grass.obj
-  artifactKey: Guid(5076ba01f21af0c4daff73ab13dba476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Grass.obj using Guid(5076ba01f21af0c4daff73ab13dba476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998bea918375f6fab1efa95fe0c14e5a') in 0.018846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Ballisa_Top.obj
-  artifactKey: Guid(18cfa8e197c1ff74292ed6ff0cc8b3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Ballisa_Top.obj using Guid(18cfa8e197c1ff74292ed6ff0cc8b3f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f5d6fd559c1d3f001c6b796d3b86e9') in 0.017296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.458516 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Shore_1.obj
-  artifactKey: Guid(188ea90cdfe6c634eb85f7a132fcebeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Shore_1.obj using Guid(188ea90cdfe6c634eb85f7a132fcebeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86436af8b37857e8dae768ffb97930de') in 0.014809 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Road_Straight.obj
-  artifactKey: Guid(e618ab8e55a3ed942a408f4d1b7f896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Road_Straight.obj using Guid(e618ab8e55a3ed942a408f4d1b7f896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9221703fc36f3c8c63ca666db3ff47') in 0.017694 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.541139 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Shore_3.obj
-  artifactKey: Guid(fa1397209d9adee4db5f8a2bba8327f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Shore_3.obj using Guid(fa1397209d9adee4db5f8a2bba8327f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331a58d6d422d6e2edb6c28db1e537f5') in 0.017171 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Shore_2.obj
-  artifactKey: Guid(cdf72d6b092b7d74cbcba07dd2c5aa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Shore_2.obj using Guid(cdf72d6b092b7d74cbcba07dd2c5aa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675fc34cefd1566ec73a72937d258bbd') in 0.017628 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.057166 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Tower_Right.obj
-  artifactKey: Guid(72a69f2d17306c241a28b11da95f8885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Tower_Right.obj using Guid(72a69f2d17306c241a28b11da95f8885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1067f73f2b86f36011d3632cf2f3b8fd') in 0.021626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Tower_Left.obj
-  artifactKey: Guid(c9744b5c955b75740868d5ebf8b04ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Tower_Left.obj using Guid(c9744b5c955b75740868d5ebf8b04ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb2deea90962d31ab5807a38b758cb6') in 0.017262 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.293502 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Tower_Straight.obj
-  artifactKey: Guid(e7a14cf0c8f8c7f48b1a463cab3cfba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Tower_Straight.obj using Guid(e7a14cf0c8f8c7f48b1a463cab3cfba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3d14191f5a1b0ddcdd3ceeee9e5f62') in 0.026788 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Tower_Standing.obj
-  artifactKey: Guid(b31c61d5adaf91b4499ddac0cc71ff72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Tower_Standing.obj using Guid(b31c61d5adaf91b4499ddac0cc71ff72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5044cd9aafd6f4755617360b8017e8') in 0.016225 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.211844 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Tree_Large.obj
-  artifactKey: Guid(1c653cfa1a46c7248b5aa77ea7624db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Tree_Large.obj using Guid(1c653cfa1a46c7248b5aa77ea7624db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7bf3d4cd838108883bff1df44c1524') in 0.018274 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Tree_Group.obj
-  artifactKey: Guid(15e2400a7e78e4c429ba356f5934ca5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Tree_Group.obj using Guid(15e2400a7e78e4c429ba356f5934ca5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bbf39d9b3f84f3123154916ee2fb02') in 0.017728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.360818 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Wall_Out.obj
-  artifactKey: Guid(a47cc0e994d04e14684868a64d825a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Wall_Out.obj using Guid(a47cc0e994d04e14684868a64d825a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4033a4984fe92be64fac43961d1357ac') in 0.017028 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Ballisa_Base.obj
-  artifactKey: Guid(af50c4e21f0e9b9419ff00e3c39e7711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Ballisa_Base.obj using Guid(af50c4e21f0e9b9419ff00e3c39e7711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0cc1abfe2e8867d43719c974a4fd595') in 0.017771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Models/Wall_In.obj
-  artifactKey: Guid(e06f55a4e9f0e954d8cfa9474c972880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Models/Wall_In.obj using Guid(e06f55a4e9f0e954d8cfa9474c972880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bf3a80a86d4ef8ed659946d233f493') in 0.018194 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.882279 seconds.
-  path: Assets/Prefabs/Tiles/OceanShore.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanShore.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48669b97a0bea6541418b1705f79c92d') in 0.031984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.008746 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Ocean.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Ocean.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7c52fa98036a3142872c5a1499251d') in 0.035289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.422144 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Ocean.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Ocean.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ed823b6938a0907e7ea479adbdc684') in 0.033980 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.119050 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab
-  artifactKey: Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab using Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94f3bfad8535e8591867191d3ce5af9') in 0.034804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.286189 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab
-  artifactKey: Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab using Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd945bce49a5d3b4d5b7c3494965fbf8') in 0.032963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.593436 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Ocean.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Ocean.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc48246918f608881ac9403041f69d40') in 0.030867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.922844 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab
-  artifactKey: Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab using Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897747520dd1683466ccc7ceaa591127') in 0.031907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.611624 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab
-  artifactKey: Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab using Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db373b89ea41d780322b4b495fcebb0b') in 0.033588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.041060 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight90.prefab
-  artifactKey: Guid(df5d6f41299663543b8e07c898c688bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight90.prefab using Guid(df5d6f41299663543b8e07c898c688bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4372bffe76e967da2c2bccba3fa10e57') in 0.034484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.756479 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight180.prefab
-  artifactKey: Guid(a9672ee9b2e7672418ee4166ff65d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight180.prefab using Guid(a9672ee9b2e7672418ee4166ff65d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded0f99e36a0cceed81ddfea14afb6b3') in 0.034759 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.680941 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight270.prefab
-  artifactKey: Guid(d1df201ea49f1c841baa83cce330a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight270.prefab using Guid(d1df201ea49f1c841baa83cce330a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c15170b4047591d2bfad68754618a43') in 0.034279 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.733848 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Ocean.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Ocean.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefafd09822a0a4db66e9b2f87a29fa0') in 0.032202 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.902331 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Ocean.prefab
-  artifactKey: Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Ocean.prefab using Guid(86e8c4c71ae08a64f9b42cf70b3400b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73478e48a73505038ddcaa6e6bd0265') in 0.030519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.038995 seconds.
-  path: Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab
-  artifactKey: Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_ShoreStraight.prefab using Guid(90b896e2f56380a4b99adf7c4c7c6d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b430311b128ed4bffe60031b0b5ed4b7') in 0.032374 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.974796 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles
-  artifactKey: Guid(4520a5f73bb9fe444ae04e0772e91e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles using Guid(4520a5f73bb9fe444ae04e0772e91e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d792f8f8bd154089a8f54a5bfd54acd') in 0.002570 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.745349 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(3eea693672225ad469b9dbd1e605a7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(3eea693672225ad469b9dbd1e605a7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e3497a413768e846dc850580011c21') in 0.002884 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.555000 seconds.
-  path: Assets/Prefabs/Tiles/Shore_Corner.prefab
-  artifactKey: Guid(700c585d55d04b84ea6b77a12c902f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Shore_Corner.prefab using Guid(700c585d55d04b84ea6b77a12c902f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb01d1f98004dc442aaca0e88143401') in 0.034167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.081119 seconds.
-  path: Assets/Prefabs/Tiles/Shore_Corner.prefab
-  artifactKey: Guid(700c585d55d04b84ea6b77a12c902f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Shore_Corner.prefab using Guid(700c585d55d04b84ea6b77a12c902f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb57ab36bfdda244ec7fe205ed88a5a5') in 0.034404 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.364515 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_Corner.prefab
-  artifactKey: Guid(700c585d55d04b84ea6b77a12c902f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_Corner.prefab using Guid(700c585d55d04b84ea6b77a12c902f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b833f42e4cda585471e7c0431e097703') in 0.034643 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.654704 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_Corner90.prefab
-  artifactKey: Guid(3670c66ef1977d548944b600657d6188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_Corner90.prefab using Guid(3670c66ef1977d548944b600657d6188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a869ef8beeb075f4e4990ca022b8ac8') in 0.034543 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.681490 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_Corner90.prefab
-  artifactKey: Guid(3670c66ef1977d548944b600657d6188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_Corner90.prefab using Guid(3670c66ef1977d548944b600657d6188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda69883dbe4614ebcd066e7b862b003') in 0.035826 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.253876 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_Corner180.prefab
-  artifactKey: Guid(f71a2dcf622835f459a1b3e3b5751b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_Corner180.prefab using Guid(f71a2dcf622835f459a1b3e3b5751b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed317ddcbccfa2bdef936cfcf4f05a48') in 0.033787 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.046163 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_Corner180.prefab
-  artifactKey: Guid(f71a2dcf622835f459a1b3e3b5751b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_Corner180.prefab using Guid(f71a2dcf622835f459a1b3e3b5751b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7d3e86b015e75a2e5370f50c02b35a') in 0.030715 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.369731 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_Corner270.prefab
-  artifactKey: Guid(3d585d7eaec9962409db7f7cc8e45412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_Corner270.prefab using Guid(3d585d7eaec9962409db7f7cc8e45412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd2e48063c8f847c388d02a5809f010') in 0.034011 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 48.508237 seconds.
-  path: Assets/Prefabs/Tiles/Shore_InwardCorner.prefab
-  artifactKey: Guid(e18900521d49abe4eaaeea16752ef5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Shore_InwardCorner.prefab using Guid(e18900521d49abe4eaaeea16752ef5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a3fe6250bcf545677285b55e646740') in 0.038154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.308791 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner.prefab
-  artifactKey: Guid(e18900521d49abe4eaaeea16752ef5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner.prefab using Guid(e18900521d49abe4eaaeea16752ef5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc380b428582584744d6edc13c60150') in 0.031651 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.809618 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner90.prefab
-  artifactKey: Guid(cef88b60cb5e0344ebd47be3c4a3dd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner90.prefab using Guid(cef88b60cb5e0344ebd47be3c4a3dd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14160b9451ce6c8abdd574dc13e593c') in 0.033480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.906190 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner90.prefab
-  artifactKey: Guid(cef88b60cb5e0344ebd47be3c4a3dd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner90.prefab using Guid(cef88b60cb5e0344ebd47be3c4a3dd52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78da6c58559232e5a7a9069605551a7d') in 0.032969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.829743 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner180.prefab
-  artifactKey: Guid(05b51e25b5336ed408dfb91bccd0ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner180.prefab using Guid(05b51e25b5336ed408dfb91bccd0ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f88d8ddb7b5d12d42671f603cde6b2') in 0.032358 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.275740 seconds.
-  path: Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner270.prefab
-  artifactKey: Guid(6ea0e04a754817144a3de92ee4c99349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/OceanTiles/Shore_InwardCorner270.prefab using Guid(6ea0e04a754817144a3de92ee4c99349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0223483bea20b4bec32bd523b3fd8b38') in 0.033795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 67.475656 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Tree.prefab
-  artifactKey: Guid(e7e4ffeb770b9b04a8b134ff99b19542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Tree.prefab using Guid(e7e4ffeb770b9b04a8b134ff99b19542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0806d863d2b24332aec32400a66adf6e') in 0.036553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.878418 seconds.
-  path: Assets/Prefabs/Tiles/Tile_Tree.prefab
-  artifactKey: Guid(e7e4ffeb770b9b04a8b134ff99b19542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tiles/Tile_Tree.prefab using Guid(e7e4ffeb770b9b04a8b134ff99b19542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81b34f55c2ed5be1f81d43ded0c9892') in 0.034283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 806.198217 seconds.
-  path: Assets/Prefabs/Environment
-  artifactKey: Guid(969f8faa6b970944dad7a0b84de45f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment using Guid(969f8faa6b970944dad7a0b84de45f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4af486614fe86e2c10e0d4e07e647b5') in 0.002614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.363371 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Left.prefab
-  artifactKey: Guid(686cbd5927aa6d8498fcbade54b8d635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Left.prefab using Guid(686cbd5927aa6d8498fcbade54b8d635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab905f41fb20b4c1251078cd215b9dd') in 0.017322 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.985275 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Right.prefab
-  artifactKey: Guid(9c8abec1ab510d741bfdef12c80c36d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Right.prefab using Guid(9c8abec1ab510d741bfdef12c80c36d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ee622385a3c521cab1c78faa42fbef') in 0.008819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.724806 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Standing.prefab
-  artifactKey: Guid(7990df5d14c5d674ab9392935d4f6bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Standing.prefab using Guid(7990df5d14c5d674ab9392935d4f6bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf9c746f2ba9de9c8570d61232e307d') in 0.008592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.381629 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Straight.prefab
-  artifactKey: Guid(d37bc1d66713c1342bc827d9143c768e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Tower_Straight.prefab using Guid(d37bc1d66713c1342bc827d9143c768e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34da7a00a4ea0c31ae53980cb7ed8490') in 0.009095 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.372701 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Tree_Group.prefab
-  artifactKey: Guid(7fb8d74871fa9c74cab9389cd54e2860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Tree_Group.prefab using Guid(7fb8d74871fa9c74cab9389cd54e2860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2058c3df6ca7774314b936b009fbfc4c') in 0.008885 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.353755 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Tree_Large.prefab
-  artifactKey: Guid(e087f990d0ffa4f4c9f7dcf9b9f96eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Tree_Large.prefab using Guid(e087f990d0ffa4f4c9f7dcf9b9f96eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a44749b610e825d95d64c40969388a') in 0.009760 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.605372 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Wall_In.prefab
-  artifactKey: Guid(34e4951a39dba9449b7dc9d52534cd97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Wall_In.prefab using Guid(34e4951a39dba9449b7dc9d52534cd97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54fd44c9b45162aac1de74e25835e3a5') in 0.008836 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 225.854837 seconds.
-  path: Assets/Prefabs/Environment/Trees
-  artifactKey: Guid(14f353f559afa454aa1d916a95b8fc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment/Trees using Guid(14f353f559afa454aa1d916a95b8fc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a221ad4d2ed0825414d214f1fbe2540') in 0.002646 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.122744 seconds.
-  path: Assets/Prefabs/Environment/Tree_Group.prefab
-  artifactKey: Guid(7fb8d74871fa9c74cab9389cd54e2860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment/Tree_Group.prefab using Guid(7fb8d74871fa9c74cab9389cd54e2860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb1fdc1201db5a3952bd5e27e971e0c') in 0.009532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.469123 seconds.
-  path: Assets/Prefabs/Environment/Castles
-  artifactKey: Guid(62df201a245578649b47530ab52d6ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Environment/Castles using Guid(62df201a245578649b47530ab52d6ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0802776a3f46b614f6e1039a6f188ce0') in 0.002591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.676472 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs
-  artifactKey: Guid(0810c18387c203643b2bc85ab582fdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs using Guid(0810c18387c203643b2bc85ab582fdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03792897d1bfc1cc2ad1413db1fa13b') in 0.002828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.145960 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Gate_1.prefab
-  artifactKey: Guid(d0127103aeb54ed45b71e686472ac405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Gate_1.prefab using Guid(d0127103aeb54ed45b71e686472ac405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a00e2b5371242127fa924cf481bf1597') in 0.012652 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.657997 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Gate_2.prefab
-  artifactKey: Guid(4c29e4de4a2bbfb4b8b0ef23411b4393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Gate_2.prefab using Guid(4c29e4de4a2bbfb4b8b0ef23411b4393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b2656ff04476b54975b41f4a9ee04e') in 0.008599 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.934053 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Road_Straight.prefab
-  artifactKey: Guid(516bafc615be66c4ab287e43b2c75817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Road_Straight.prefab using Guid(516bafc615be66c4ab287e43b2c75817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbbb7ac0fcaba7120ea9578064e42cc') in 0.014080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.179613 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Shore_1.prefab
-  artifactKey: Guid(ced0806bb3a17fd42bfe8fe5f0c2faa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Shore_1.prefab using Guid(ced0806bb3a17fd42bfe8fe5f0c2faa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc6210f0938b94de0d1cc8fe1c105dc') in 0.012231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.543826 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Shore_2.prefab
-  artifactKey: Guid(be3e859d916267f489f694bfa840a7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Shore_2.prefab using Guid(be3e859d916267f489f694bfa840a7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88671344202e8b7702f53bfeab8ebf13') in 0.012392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.221561 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Shore_3.prefab
-  artifactKey: Guid(09b5f3214c0f1ac4a98d9eb6975d5c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Shore_3.prefab using Guid(09b5f3214c0f1ac4a98d9eb6975d5c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e874885f1382a487973730a8d926f42') in 0.014199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.494652 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Wall_Out.prefab
-  artifactKey: Guid(3f03f263d000f954a8885a417e678a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Wall_Out.prefab using Guid(3f03f263d000f954a8885a417e678a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016ebd3cbf57beee1929e37928608d54') in 0.009064 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.618682 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Wall_Straight.prefab
-  artifactKey: Guid(7f7ab251192cf3c4daa485590b0da789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Wall_Straight.prefab using Guid(7f7ab251192cf3c4daa485590b0da789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4c38879cfae0e16360e409cf3fd516') in 0.012193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.343364 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Water.prefab
-  artifactKey: Guid(437f4c0ccc35e824fac7b91fa50716d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Water.prefab using Guid(437f4c0ccc35e824fac7b91fa50716d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdbf95a4edfba129846383975e2daf8') in 0.009041 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.559555 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Grass.prefab
-  artifactKey: Guid(8268644ef66d0e148bce09f9dea8a666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Grass.prefab using Guid(8268644ef66d0e148bce09f9dea8a666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63e4a1a71634d55b18f85f43ec3de2b') in 0.011775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.855559 seconds.
-  path: Assets/AssetPacks/VoxelCastle/Prefabs/Bolt.prefab
-  artifactKey: Guid(7362a7dc6d14d7748953ae63138db72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/VoxelCastle/Prefabs/Bolt.prefab using Guid(7362a7dc6d14d7748953ae63138db72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae4fef081aab69ec5c4779ced91e0a3') in 0.012079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 49.123172 seconds.
-  path: Assets/Materials/Enemy.mat
-  artifactKey: Guid(6e9a8b8a0e2131e4eb0d7817bd45dd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Enemy.mat using Guid(6e9a8b8a0e2131e4eb0d7817bd45dd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246787ae1ae6bb08b8c9de829c0acfb6') in 0.048703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289988fcecf3b00d1602f8d2b589f7dd') in 0.057176 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Fonts/Trickster-Reg.ttf
-  artifactKey: Guid(b1c736577c435fb49bd521f66cc77e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/Trickster-Reg.ttf using Guid(b1c736577c435fb49bd521f66cc77e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff021b951bb73e35cff566058bee06ae') in 0.076831 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a0ad9e970f3d4360c5660ccbeaf032') in 0.016794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/AssetPacks/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79889cafde56e022babe0107d274bab5') in 0.010331 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0d2861f60500f05bd29199894f7bb5') in 0.044829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3805f090058079e2a020d83bd1535709') in 0.037821 seconds 
+  Time since last request: 476.826689 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(0cbcb8c825026c94b908fcf1ecd0ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(0cbcb8c825026c94b908fcf1ecd0ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f769599222825f20a98b52972109e1c') in 0.089048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.665982 seconds.
+  path: Assets/Prefabs/Canvas.prefab
+  artifactKey: Guid(0cbcb8c825026c94b908fcf1ecd0ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvas.prefab using Guid(0cbcb8c825026c94b908fcf1ecd0ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2534f45ce29e92f589e4d368f448d1e') in 0.020054 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002564 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3306.
+Total: 2.012800 ms (FindLiveObjects: 0.218200 ms CreateObjectMapping: 0.129100 ms MarkObjects: 1.604000 ms  DeleteObjects: 0.060600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002665 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3308.
+Total: 2.390800 ms (FindLiveObjects: 0.228400 ms CreateObjectMapping: 0.190100 ms MarkObjects: 1.896900 ms  DeleteObjects: 0.074100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 284.320163 seconds.
+  path: Assets/Prefabs/Ballista.prefab
+  artifactKey: Guid(8a965e088bae16643aab3d07ccfd5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ballista.prefab using Guid(8a965e088bae16643aab3d07ccfd5e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a315efd390235e656930b4f3b6e2826') in 0.055755 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002354 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.927 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3311.
+Total: 1.894600 ms (FindLiveObjects: 0.216400 ms CreateObjectMapping: 0.117100 ms MarkObjects: 1.516300 ms  DeleteObjects: 0.044200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002317 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.799 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3313.
+Total: 2.881200 ms (FindLiveObjects: 0.261900 ms CreateObjectMapping: 0.136300 ms MarkObjects: 2.422800 ms  DeleteObjects: 0.059100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002428 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3315.
+Total: 1.812000 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.119900 ms MarkObjects: 1.423100 ms  DeleteObjects: 0.048000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003549 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.825 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3317.
+Total: 1.997200 ms (FindLiveObjects: 0.230900 ms CreateObjectMapping: 0.129100 ms MarkObjects: 1.588300 ms  DeleteObjects: 0.048100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002450 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3319.
+Total: 1.897400 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.117200 ms MarkObjects: 1.512200 ms  DeleteObjects: 0.047100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002321 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.794 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3321.
+Total: 2.057500 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.150300 ms MarkObjects: 1.614000 ms  DeleteObjects: 0.045900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002361 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.902 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3323.
+Total: 1.788500 ms (FindLiveObjects: 0.214900 ms CreateObjectMapping: 0.124500 ms MarkObjects: 1.400900 ms  DeleteObjects: 0.047400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002293 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3325.
+Total: 1.865800 ms (FindLiveObjects: 0.218700 ms CreateObjectMapping: 0.117600 ms MarkObjects: 1.481400 ms  DeleteObjects: 0.047500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002354 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3327.
+Total: 1.834600 ms (FindLiveObjects: 0.223200 ms CreateObjectMapping: 0.123000 ms MarkObjects: 1.438600 ms  DeleteObjects: 0.048900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002483 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3329.
+Total: 1.901900 ms (FindLiveObjects: 0.234000 ms CreateObjectMapping: 0.138600 ms MarkObjects: 1.484100 ms  DeleteObjects: 0.044500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002332 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.6 MB.
+System memory in use after: 105.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3331.
+Total: 1.909100 ms (FindLiveObjects: 0.236900 ms CreateObjectMapping: 0.134600 ms MarkObjects: 1.488900 ms  DeleteObjects: 0.047800 ms)
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
