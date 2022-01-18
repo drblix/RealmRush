@@ -11,12 +11,7 @@ public class TowerScript : MonoBehaviour
         BankScript bank = FindObjectOfType<BankScript>();
         Transform towersPool = GameObject.Find("TowersPool").transform;
 
-        if (bank == null)
-        {
-            return false;
-        }
-
-        if (bank.CurrentBalance >= cost)
+        if (bank != null && bank.CurrentBalance >= cost)
         {
             Instantiate(tower.gameObject, position, Quaternion.identity, towersPool);
             bank.WithdrawCoins(cost);

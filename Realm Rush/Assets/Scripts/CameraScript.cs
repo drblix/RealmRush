@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraScript : MonoBehaviour
 {
@@ -8,19 +9,32 @@ public class CameraScript : MonoBehaviour
     private float cameraSpeed = 16f;
 
     [SerializeField]
-    private float maxXRange01 = 12.1f;
+    private float maxXRange01;
     [SerializeField]
-    private float maxXRange02 = 104.92f;
+    private float maxXRange02;
 
     [SerializeField]
-    private float maxZRange01 = -44.6f;
+    private float maxZRange01;
     [SerializeField]
-    private float maxZRange02 = 27.7f;
+    private float maxZRange02;
 
     private Vector3 rightTransform;
     private Vector3 leftTransform;
     private Vector3 forwardTransform;
     private Vector3 backTransform;
+
+    private readonly float[] levelXRestrictions = new float[]
+    {
+        // Level1
+        12.1f,
+        104.92f,
+    };
+    private readonly float[] levelZRestrictions = new float[]
+    {
+        // Level1
+        -44.6f,
+        27.7f,
+    };
 
     private void Awake()
     {
@@ -28,6 +42,20 @@ public class CameraScript : MonoBehaviour
         leftTransform = Vector3.left * Time.deltaTime * cameraSpeed;
         forwardTransform = Vector3.forward * Time.deltaTime * cameraSpeed;
         backTransform = Vector3.back * Time.deltaTime * cameraSpeed;
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 1:
+                maxXRange01 = levelXRestrictions[0];
+                maxXRange02 = levelXRestrictions[1];
+                maxZRange01 = levelZRestrictions[0];
+                maxZRange02 = levelZRestrictions[1];
+                break;
+
+            default:
+                Debug.LogError("Camera restrictions unassigned!");
+                break;
+        }
     }
 
     private void Update()

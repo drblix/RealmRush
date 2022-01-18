@@ -15,17 +15,17 @@ public class Enemy : MonoBehaviour
     {
         bank = FindObjectOfType<BankScript>();
     }
-
+    
     public void RewardGold()
     {
-        if(bank == null) { return; }
+        if(bank == null) { Debug.LogWarning("Bank not found"); return; }
 
         bank.DepositCoins(goldReward);
     }
 
     public void StealGold()
     {
-        if (bank == null) { return; }
+        if (bank == null) { Debug.LogWarning("Bank not found"); return; }
 
         bank.WithdrawCoins(goldPenalty);
     }
