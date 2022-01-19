@@ -45,10 +45,9 @@ public class BankScript : MonoBehaviour
     {
         currentBalance -= Mathf.Abs(amount); // Subtracts absolute value of passed in ammount from current balance
 
-        if (currentBalance < 0) // If current balance is less than 0, then end game
+        if (currentBalance < 0)
         {
-            // Game over
-            ReloadScene();
+            currentBalance = 0;
         }
 
         UpdateDisplay(); // Calls UpdateDisplay function
@@ -66,12 +65,5 @@ public class BankScript : MonoBehaviour
         {
             coinsAmountUI.color = _coinsColor; // If current balance is greater than 20, set text to yellow
         }
-    }
-
-    private void ReloadScene()
-    {
-        Scene currentScene = SceneManager.GetActiveScene(); // Gets active scene
-
-        SceneManager.LoadScene(currentScene.buildIndex); // Resets current scene
     }
 }

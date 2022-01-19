@@ -55,4 +55,14 @@ public class ObjectPool : MonoBehaviour
             }
         }
     }
+
+    public void GameOver()
+    {
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        gameObject.SetActive(false);
+    }
 }

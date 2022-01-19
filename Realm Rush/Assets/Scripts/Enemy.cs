@@ -6,14 +6,16 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField]
     private int goldReward = 10;
-    [SerializeField]
-    private int goldPenalty = 25;
+    [SerializeField] [Range(5f, 100f)]
+    private float castleDamageAmount = 10f;
 
     private BankScript bank;
+    private CastleScript castle;
 
     private void Awake()
     {
         bank = FindObjectOfType<BankScript>();
+        castle = FindObjectOfType<CastleScript>();
     }
     
     public void RewardGold()
@@ -23,10 +25,10 @@ public class Enemy : MonoBehaviour
         bank.DepositCoins(goldReward);
     }
 
-    public void StealGold()
+    public void AttackCastle()
     {
-        if (bank == null) { Debug.LogWarning("Bank not found"); return; }
+        if (castle == null) { Debug.LogWarning("Castle not found"); return; }
 
-        bank.WithdrawCoins(goldPenalty);
+        castle.DamageCastle(castleDamageAmount);
     }
 }

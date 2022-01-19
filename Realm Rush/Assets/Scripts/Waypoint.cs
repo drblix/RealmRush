@@ -19,4 +19,9 @@ public class Waypoint : MonoBehaviour
             isPlaceable = !isPlaced;
         }
     }
+
+    public void GameOver()
+    {
+        isPlaceable = false;
+    }
 }
