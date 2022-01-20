@@ -29,7 +29,7 @@ public class CastleScript : MonoBehaviour
     {
         currentCastleHealth -= Mathf.Abs(amount);
 
-        if (currentCastleHealth < 0)
+        if (currentCastleHealth <= 0)
         {
             StartCoroutine(GameOver());
         }
@@ -51,7 +51,7 @@ public class CastleScript : MonoBehaviour
     private IEnumerator GameOver()
     {
         ObjectPool objectPool = FindObjectOfType<ObjectPool>();
-        Transform tiles = GameObject.Find("Environment").transform.Find("WorldTiles");
+        Transform tiles = GameObject.FindGameObjectWithTag("Environment").transform.Find("WorldTiles");
 
         objectPool.GameOver();
 

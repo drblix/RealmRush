@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cf29f58bf7a246418999523703408fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buildMenu: {fileID: 6189562846384011677, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
   towerScript: {fileID: 868200982952971062, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
   isPlaceable: 1
 --- !u!65 &936769594759904924
@@ -169,13 +170,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457255046744292092}
-  m_LocalRotation: {x: -0.7071068, y: -0.0000021904707, z: 0.0000021904707, w: -0.7071068}
+  m_LocalRotation: {x: -0.0000024395013, y: 0.7071068, z: -0.7071068, w: -0.0000024395013}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 329046420011670578}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 360}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 540}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -243,7 +244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (0, 0)
+  m_text: (3, -1)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
