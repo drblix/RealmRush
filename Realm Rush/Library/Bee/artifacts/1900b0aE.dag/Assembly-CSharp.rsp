@@ -331,6 +331,7 @@
 "Assets/Scripts/ObjectPool.cs"
 "Assets/Scripts/TargetLocator.cs"
 "Assets/Scripts/TowerScript.cs"
+"Assets/Scripts/UIManager.cs"
 "Assets/Scripts/Waypoint.cs"
 -langversion:8.0
 

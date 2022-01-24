@@ -61,6 +61,7 @@ public class CameraScript : MonoBehaviour
     private void Update()
     {
         CheckInput();
+        UpdateTransform();
     }
 
     private void CheckInput()
@@ -86,13 +87,17 @@ public class CameraScript : MonoBehaviour
         }
     }
 
-    public void UpdateTransforms(float newSpeed)
+    public void UpdateSpeed(float newSpeed)
     {
         cameraSpeed = newSpeed;
+        UpdateTransform();
+    }
 
-        rightTransform = Vector3.right * Time.deltaTime * cameraSpeed;
-        leftTransform = Vector3.left * Time.deltaTime * cameraSpeed;
-        forwardTransform = Vector3.forward * Time.deltaTime * cameraSpeed;
-        backTransform = Vector3.back * Time.deltaTime * cameraSpeed;
+    private void UpdateTransform()
+    {
+        rightTransform = cameraSpeed * Time.deltaTime * Vector3.right;
+        leftTransform = cameraSpeed * Time.deltaTime * Vector3.left;
+        forwardTransform = cameraSpeed * Time.deltaTime * Vector3.forward;
+        backTransform = cameraSpeed * Time.deltaTime * Vector3.back;
     }
 }

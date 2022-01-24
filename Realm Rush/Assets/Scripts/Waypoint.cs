@@ -7,17 +7,14 @@ public class Waypoint : MonoBehaviour
     [SerializeField]
     private ParticleSystem selectionEffect;
 
-    private Vector3 tilePosition;
-
     [SerializeField]
     private bool isPlaceable;
     public bool IsPlaceable { get { return isPlaceable; } }
 
-    private void Awake()
-    {
-        tilePosition = transform.position;
-    }
+    private bool hasTower = false;
 
+
+    // Mouse functions
     private void OnMouseDown()
     {
         if (isPlaceable)
@@ -25,9 +22,37 @@ public class Waypoint : MonoBehaviour
             bool isPlaced = towerScript.CreateTower(towerScript, transform.position);
 
             isPlaceable = !isPlaced;
+            hasTower = true;
         }
     }
+
+    private void OnMouseOver()
+    {
+        if (isPlaceable && !selectionEffect.isPlaying)
+        {
+            Debug.Log("playing");
+            selectionEffect.Play();
+        }
+        else
+        {
+            selectionEffect.Stop();
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        selectionEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+    }
     
+
+
+    public void ToggleTile(bool toggle)
+    {
+        if (!hasTower)
+        {
+            isPlaceable = toggle;
+        }
+    }
 
     public void GameOver()
     {

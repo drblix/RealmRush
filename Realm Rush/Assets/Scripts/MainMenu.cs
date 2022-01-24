@@ -22,4 +22,9 @@ public class MainMenu : MonoBehaviour
         mainScreen.SetActive(!mainScreen.activeInHierarchy);
         creditScreen.SetActive(!creditScreen.activeInHierarchy);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
