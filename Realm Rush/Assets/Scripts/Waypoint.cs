@@ -5,50 +5,74 @@ public class Waypoint : MonoBehaviour
     [SerializeField]
     private TowerScript towerScript;
     [SerializeField]
+    private GameObject selectionBox;
+    [SerializeField]
     private ParticleSystem selectionEffect;
+    [SerializeField]
+    private ParticleSystem placeEffect;
 
     [SerializeField]
     private bool isPlaceable;
     public bool IsPlaceable { get { return isPlaceable; } }
 
     private bool hasTower = false;
+    private bool isObstacleTile;
+
+    private void Awake()
+    {
+        if (!isPlaceable)
+        {
+            isObstacleTile = true;
+        }
+        else
+        {
+            isObstacleTile = false;
+        }
+    }
 
 
     // Mouse functions
     private void OnMouseDown()
     {
-        if (isPlaceable)
-        {
-            bool isPlaced = towerScript.CreateTower(towerScript, transform.position);
-
-            isPlaceable = !isPlaced;
-            hasTower = true;
-        }
+        PlaceTower();
     }
 
     private void OnMouseOver()
     {
-        if (isPlaceable && !selectionEffect.isPlaying)
+        if (isPlaceable && !hasTower && !selectionEffect.isPlaying)
         {
-            Debug.Log("playing");
             selectionEffect.Play();
-        }
-        else
-        {
-            selectionEffect.Stop();
+            selectionBox.SetActive(true);
         }
     }
 
     private void OnMouseExit()
     {
-        selectionEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        selectionEffect.Stop();
+        selectionBox.SetActive(false);
     }
-    
 
+    // Other functions
+    private void PlaceTower()
+    {
+        if (isPlaceable)
+        {
+            bool isPlaced = towerScript.CreateTower(towerScript, transform.position);
+
+            if (!isPlaced) { return; }
+
+            isPlaceable = !isPlaced;
+            hasTower = true;
+
+            placeEffect.Play();
+            selectionEffect.Stop(false, ParticleSystemStopBehavior.StopEmittingAndClear);
+            selectionBox.SetActive(false);
+        }
+    }
 
     public void ToggleTile(bool toggle)
     {
-        if (!hasTower)
+        if (!hasTower && !isObstacleTile)
         {
             isPlaceable = toggle;
         }

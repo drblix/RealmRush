@@ -38,10 +38,10 @@ public class CameraScript : MonoBehaviour
 
     private void Awake()
     {
-        rightTransform = Vector3.right * Time.deltaTime * cameraSpeed;
-        leftTransform = Vector3.left * Time.deltaTime * cameraSpeed;
-        forwardTransform = Vector3.forward * Time.deltaTime * cameraSpeed;
-        backTransform = Vector3.back * Time.deltaTime * cameraSpeed;
+        rightTransform = cameraSpeed * Time.deltaTime * Vector3.right;
+        leftTransform = cameraSpeed * Time.deltaTime * Vector3.left;
+        forwardTransform = cameraSpeed * Time.deltaTime * Vector3.forward;
+        backTransform = cameraSpeed * Time.deltaTime * Vector3.back;
 
         switch (SceneManager.GetActiveScene().buildIndex)
         {
@@ -66,22 +66,22 @@ public class CameraScript : MonoBehaviour
 
     private void CheckInput()
     {
-        if (Input.GetKey(KeyCode.RightArrow) && (transform.position.x < maxXRange02))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) && (transform.position.x < maxXRange02))
         {
             transform.Translate(rightTransform, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow) && (transform.position.z < maxZRange02))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) && (transform.position.z < maxZRange02))
         {
             transform.Translate(forwardTransform, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) && (transform.position.z > maxZRange01))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) && (transform.position.z > maxZRange01))
         {
             transform.Translate(backTransform, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && (transform.position.x > maxXRange01))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) && (transform.position.x > maxXRange01))
         {
             transform.Translate(leftTransform, Space.World);
         }
