@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,14 +10,24 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject settingsMenuButton;
 
-    [SerializeField]
+    private AudioSource buttonClick;
+
     private Transform worldTiles;
+
+    private bool towersMuted = false;
+    public bool TowersMuted { get { return towersMuted; } }
+
 
     private bool gamePaused = false;
 
     private void Awake()
     {
+        worldTiles = GameObject.FindGameObjectWithTag("WorldTiles").transform;
+        buttonClick = GetComponent<AudioSource>();
+
         settingsMenu.SetActive(false);
+
+        if (!worldTiles) { Debug.LogError("World tiles not found!"); }
     }
 
     private void Update()
@@ -33,6 +42,20 @@ public class UIManager : MonoBehaviour
             {
                 ToggleTiles(false);
             }
+        }
+    }
+
+    public void ToggleTowersAudio(bool state)
+    {
+        buttonClick.Play();
+
+        if (state)
+        {
+            towersMuted = true;
+        }
+        else
+        {
+            towersMuted = false;
         }
     }
 
@@ -56,6 +79,8 @@ public class UIManager : MonoBehaviour
 
     public void ToggleSettings()
     {
+        buttonClick.Play();
+
         settingsMenu.SetActive(!settingsMenu.activeInHierarchy);
         settingsMenuButton.SetActive(!settingsMenuButton.activeInHierarchy);
 

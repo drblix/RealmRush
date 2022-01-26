@@ -1,22 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CameraScript : MonoBehaviour
 {
     [SerializeField] [Range(10f, 100f)]
-    private float cameraSpeed = 16f;
-
-    [SerializeField]
-    private float maxXRange01;
-    [SerializeField]
-    private float maxXRange02;
-
-    [SerializeField]
-    private float maxZRange01;
-    [SerializeField]
-    private float maxZRange02;
+    private float cameraSpeed = 25f;
 
     private Vector3 rightTransform;
     private Vector3 leftTransform;
@@ -42,49 +30,47 @@ public class CameraScript : MonoBehaviour
         leftTransform = cameraSpeed * Time.deltaTime * Vector3.left;
         forwardTransform = cameraSpeed * Time.deltaTime * Vector3.forward;
         backTransform = cameraSpeed * Time.deltaTime * Vector3.back;
-
-        switch (SceneManager.GetActiveScene().buildIndex)
-        {
-            case 1:
-                maxXRange01 = levelXRestrictions[0];
-                maxXRange02 = levelXRestrictions[1];
-                maxZRange01 = levelZRestrictions[0];
-                maxZRange02 = levelZRestrictions[1];
-                break;
-
-            default:
-                Debug.LogError("Camera restrictions unassigned!");
-                break;
-        }
     }
 
     private void Update()
     {
         CheckInput();
         UpdateTransform();
+        CameraBoundaries();
     }
 
     private void CheckInput()
     {
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) && (transform.position.x < maxXRange02))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Translate(rightTransform, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) && (transform.position.z < maxZRange02))
+
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             transform.Translate(forwardTransform, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) && (transform.position.z > maxZRange01))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             transform.Translate(backTransform, Space.World);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) && (transform.position.x > maxXRange01))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.Translate(leftTransform, Space.World);
         }
+    }
+
+    private void CameraBoundaries()
+    {
+        var pos = transform.position;
+
+        pos.x = Mathf.Clamp(transform.position.x, levelXRestrictions[0], levelXRestrictions[1]);
+        pos.z = Mathf.Clamp(transform.position.z, levelZRestrictions[0], levelZRestrictions[1]);
+
+        transform.position = pos;
     }
 
     public void UpdateSpeed(float newSpeed)

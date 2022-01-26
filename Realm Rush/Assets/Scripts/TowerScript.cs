@@ -5,7 +5,6 @@ public class TowerScript : MonoBehaviour
     [SerializeField]
     private int cost = 50;
 
-
     public bool CreateTower(TowerScript tower, Vector3 position)
     {
         BankScript bank = FindObjectOfType<BankScript>();

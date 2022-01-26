@@ -4,6 +4,8 @@ public class Waypoint : MonoBehaviour
 {
     [SerializeField]
     private TowerScript towerScript;
+
+    [Header("Tile Properties")]
     [SerializeField]
     private GameObject selectionBox;
     [SerializeField]

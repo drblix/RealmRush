@@ -4,27 +4,31 @@ using UnityEngine;
 
 public class TargetLocator : MonoBehaviour
 {
+    private UIManager uiManager;
+
     [SerializeField]
-    private Transform _weapon;
+    private Transform weapon;
     [SerializeField]
-    private ParticleSystem _projectileSystem;
+    private ParticleSystem projectileSystem;
+    [SerializeField]
+    private AudioSource ballistaShoot;
 
     [Header("Tower Config")]
 
     [SerializeField] [Range(5f, 50f)] [Tooltip("Range at which the tower fires at incoming enemies")]
-    private float _range = 25f;
-    [SerializeField] [Range(0.1f, 2.5f)] [Tooltip("The rate at which the tower fires (RATE IS NOT IN SECONDS, DEPENDENT ON PARTICLE SYSTEM RATE))")]
-    private float _firingRate = 1f;
+    private float range = 25f;
+    [SerializeField] [Range(0.4f, 2.5f)] [Tooltip("The rate at which the tower fires")]
+    private float firingRate = 1.5f;
 
-    private Transform _target;
+    private Transform target;
+
+    private bool canFire = true;
 
     // Variables
 
-
-    private void Start()
+    private void Awake()
     {
-        var projectileEmission = _projectileSystem.emission;
-        projectileEmission.rateOverTime = _firingRate;
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     private void Update()
@@ -50,31 +54,50 @@ public class TargetLocator : MonoBehaviour
             }
         }
 
-        _target = closestTarget;
+        target = closestTarget;
     }
 
     private void AimWeapon()
     {
-        if (_target)
+        if (target)
         {
-            float targetDistance = Vector3.Distance(transform.position, _target.position);
+            float targetDistance = Vector3.Distance(transform.position, target.position);
 
-            if (targetDistance < _range)
+            if (targetDistance < range && canFire)
             {
-                _weapon.LookAt(_target);
-                Attack(true);
-            }
-            else
-            {
-                Attack(false);
+                weapon.LookAt(target);
+
+                if (canFire)
+                {
+                    StartCoroutine(UseWeapon());
+                }
             }
         }
     }
 
+    private IEnumerator UseWeapon()
+    {
+        bool muted = uiManager.TowersMuted;
+
+        canFire = false;
+        projectileSystem.Emit(1);
+
+        if (!muted)
+        {
+            ballistaShoot.Play();
+        }
+
+        yield return new WaitForSeconds(firingRate);
+
+        canFire = true;
+    }
+
+    /*
     private void Attack(bool isActive)
     {
         var emissionModule = _projectileSystem.emission;
 
         emissionModule.enabled = isActive;
     }
+    */
 }
