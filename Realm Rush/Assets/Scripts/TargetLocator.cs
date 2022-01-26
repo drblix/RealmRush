@@ -69,6 +69,8 @@ public class TargetLocator : MonoBehaviour
 
                 if (canFire)
                 {
+                    if (!projectileSystem.gameObject.activeInHierarchy) { return; }
+
                     StartCoroutine(UseWeapon());
                 }
             }

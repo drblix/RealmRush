@@ -97,7 +97,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraSpeed: 16
-  maxXRange01: 12.1
-  maxXRange02: 104.92
-  maxZRange01: -44.6
-  maxZRange02: 27.7
