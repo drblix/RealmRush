@@ -7,8 +7,8 @@ public class WeatherSystem : MonoBehaviour
     [SerializeField]
     private GameObject sun;
 
-    [SerializeField] [Range(-1f, 1f)]
-    private float dayNightSpeed = 0.01f;
+    [SerializeField] [Range(-10f, 10f)]
+    private float dayNightSpeed = 1f;
 
     private void Update()
     {
@@ -17,6 +17,6 @@ public class WeatherSystem : MonoBehaviour
 
     private void DayNightCycle()
     {
-        sun.transform.Rotate(0f, 0f, dayNightSpeed, Space.World);
+        sun.transform.Rotate(0f, 0f, dayNightSpeed * Time.deltaTime, Space.World);
     }
 }

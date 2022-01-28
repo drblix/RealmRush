@@ -93,13 +93,4 @@ public class TargetLocator : MonoBehaviour
 
         canFire = true;
     }
-
-    /*
-    private void Attack(bool isActive)
-    {
-        var emissionModule = _projectileSystem.emission;
-
-        emissionModule.enabled = isActive;
-    }
-    */
 }
