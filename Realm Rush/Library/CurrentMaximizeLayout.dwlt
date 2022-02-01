@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 442}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 10773
+  controlID: 12859
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 10774
+  controlID: 12860
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,9 +202,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 42.458527, y: 44.145123, z: -34.003117}
+    m_Target: {x: 107.98979, y: 34.75236, z: -14.378773}
     speed: 2
-    m_Value: {x: 42.458527, y: 44.145123, z: -34.003117}
+    m_Value: {x: 107.98979, y: 34.75236, z: -14.378773}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -251,13 +251,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.41619653, y: 0.019604005, z: -0.0091344705, w: -0.9091642}
+    m_Target: {x: -0.36403033, y: 0.19264945, z: -0.07752476, w: -0.9081178}
     speed: 2
-    m_Value: {x: -0.416141, y: 0.01960139, z: -0.009133252, w: -0.90904295}
+    m_Value: {x: -0.36397216, y: 0.19261867, z: -0.07751237, w: -0.90797263}
   m_Size:
-    m_Target: 21.312763
+    m_Target: 44.958385
     speed: 2
-    m_Value: 21.312763
+    m_Value: 44.958385
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 10740
+  controlID: 12761
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -389,7 +389,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 52fbffffca520000
+      m_ExpandedIDs: 4e7bffff78b1ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -478,22 +478,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\d4.4s\Documents\GitHub\RealmRush\Realm Rush
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 925d0000
-    m_LastClickedID: 23954
-    m_ExpandedIDs: 00000000945c0000965c000000ca9a3b
+    m_SelectedIDs: d45c0000
+    m_LastClickedID: 23764
+    m_ExpandedIDs: 00000000ac5c0000ae5c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -521,7 +521,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000945c0000965c000000ca9a3b
+    m_ExpandedIDs: 00000000ac5c0000ae5c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,9 +546,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f4520000
-    m_LastClickedInstanceID: 21236
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 78b1ffff
+    m_LastClickedInstanceID: -20104
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 21236
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
