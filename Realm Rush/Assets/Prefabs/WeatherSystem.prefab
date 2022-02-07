@@ -313,8 +313,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 0.47058824}
       maxColor: {r: 1, g: 1, b: 1, a: 0.47058824}
       maxGradient:
         serializedVersion: 2
@@ -959,7 +959,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 120
+      scalar: 150
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4948,8 +4948,9 @@ MonoBehaviour:
   lightningBolt: {fileID: 3189443993542495592, guid: 36e2f403fd2fbc743a4326e18fd08347, type: 3}
   rain: {fileID: 5478215763638818263}
   dayNightSpeed: 1
-  rainCooldown: 5
+  rainCooldown: 50
   rainChance: 7
+  lightningChance: 4
 --- !u!1 &5478215763999491891
 GameObject:
   m_ObjectHideFlags: 0

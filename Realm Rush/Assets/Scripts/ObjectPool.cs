@@ -6,6 +6,10 @@ public class ObjectPool : MonoBehaviour
 {
     [SerializeField]
     private GameObject _ram;
+
+    [SerializeField] [Min(5)]
+    private int totalEnemies = 10;
+
     [SerializeField] [Range(0, 50)]
     private int _poolSize = 5;
     [SerializeField] [Range(0.25f, 25f)]

@@ -16,7 +16,9 @@ public class CastleScript : MonoBehaviour
     [SerializeField]
     private Gradient healthGradient;
 
-    private readonly float maxCastleHealth = 100f;
+    [SerializeField] [Range(50f, 300f)]
+    private float maxCastleHealth = 100f;
+
     private float currentCastleHealth;
 
     private void Awake()

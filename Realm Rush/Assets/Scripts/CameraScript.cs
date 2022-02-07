@@ -1,10 +1,19 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CameraScript : MonoBehaviour
 {
     [SerializeField] [Range(10f, 100f)]
     private float cameraSpeed = 25f;
+
+    [SerializeField] [Tooltip("Minimum value for X (Should be smaller than 2nd X restriction)")]
+    private float xRestriction01;
+    [SerializeField] [Tooltip("Maximum value for X (Should be larger than 1st X restriction)")]
+    private float xRestriction02;
+
+    [SerializeField] [Tooltip("Minimum value for Z (Should be smaller than 2nd Z restriction)")]
+    private float zRestriction01;
+    [SerializeField] [Tooltip("Maximum value for Z (Should be larger than 1st Z restriction)")]
+    private float zRestriction02;
 
     private Vector3 rightTransform;
     private Vector3 leftTransform;
@@ -67,8 +76,8 @@ public class CameraScript : MonoBehaviour
     {
         var pos = transform.position;
 
-        pos.x = Mathf.Clamp(transform.position.x, levelXRestrictions[0], levelXRestrictions[1]);
-        pos.z = Mathf.Clamp(transform.position.z, levelZRestrictions[0], levelZRestrictions[1]);
+        pos.x = Mathf.Clamp(transform.position.x, xRestriction01, xRestriction02);
+        pos.z = Mathf.Clamp(transform.position.z, zRestriction01, zRestriction02);
 
         transform.position = pos;
     }

@@ -18,7 +18,7 @@ public class WeatherSystem : MonoBehaviour
 
     [Header("Rain Config")]
 
-    [SerializeField] [Range(1f, 100f)]
+    [SerializeField] [Range(1f, 100f)] [Tooltip("Cooldown in seconds between rain chance coroutine being called")]
     private float rainCooldown = 60f; 
     [SerializeField] [Range(1f, 10f)]
     private int rainChance = 7;
@@ -83,10 +83,16 @@ public class WeatherSystem : MonoBehaviour
             yield return new WaitForEndOfFrame();
         } // Gradually reduces sunlight intensity
 
+        var emissionModule = rain.emission;
+        float rainRate = Random.Range(100f, 200f);
+        emissionModule.rateOverTime = rainRate;
+
         rain.Play();
 
         float rainLength = Random.Range(60f, 120f);
+        
         Debug.Log(rainLength);
+
         StartCoroutine(LightningHandler());
         yield return new WaitForSeconds(rainLength);
 

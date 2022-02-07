@@ -10,13 +10,14 @@ public class CoordinateLabeler : MonoBehaviour
     [SerializeField]
     private Color blockedColor = Color.grey;
 
+    [SerializeField]
     private TextMeshPro label;
+
     private Vector2Int coords = new Vector2Int();
     private Waypoint waypoint;
 
     private void Awake()
     {
-        label = GetComponent<TextMeshPro>();
         waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
         UpdateObjectName();
