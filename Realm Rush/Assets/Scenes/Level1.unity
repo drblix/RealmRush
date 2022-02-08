@@ -20600,6 +20600,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6582079434183188034, guid: 86e8c4c71ae08a64f9b42cf70b3400b3, type: 3}
   m_PrefabInstance: {fileID: 1504248579}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1512693302 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6386309131758964476, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}
+  m_PrefabInstance: {fileID: 6386309132405621136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1519335469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28867,6 +28872,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1923716297133042679, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
+      propertyPath: objectPool
+      value: 
+      objectReference: {fileID: 1512693302}
     - target: {fileID: 2363292585519424109, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -29015,6 +29024,10 @@ PrefabInstance:
     - target: {fileID: 6386309131758964476, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386309131758964477, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}
+      propertyPath: totalEnemies
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}

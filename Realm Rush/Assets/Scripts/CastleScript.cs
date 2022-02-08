@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -9,7 +8,11 @@ public class CastleScript : MonoBehaviour
     [SerializeField]
     private GameObject gameOverText;
     [SerializeField]
+    private GameObject levelCompleteText;
+    [SerializeField]
     private GameObject mainUIElements;
+
+    private Transform objectPool;
 
     [SerializeField]
     private Image castleHealthBar;
@@ -23,6 +26,7 @@ public class CastleScript : MonoBehaviour
 
     private void Awake()
     {
+        objectPool = FindObjectOfType<ObjectPool>().transform;
         currentCastleHealth = maxCastleHealth;
         UpdateDisplay();
     }
@@ -65,8 +69,27 @@ public class CastleScript : MonoBehaviour
         mainUIElements.SetActive(false);
         gameOverText.SetActive(true);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
 
         SceneManager.LoadScene(0);
+    }
+
+    public IEnumerator LevelComplete()
+    {
+        Transform tiles = GameObject.FindGameObjectWithTag("Environment").transform.Find("WorldTiles");
+
+        foreach (Transform child in tiles)
+        {
+            child.GetComponent<Waypoint>().GameOver();
+        }
+
+        mainUIElements.SetActive(false);
+        levelCompleteText.SetActive(true);
+
+        yield return new WaitForSeconds(5f);
+
+        int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+
+        SceneManager.LoadScene(nextScene);
     }
 }

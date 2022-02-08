@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
@@ -9,6 +8,8 @@ public class ObjectPool : MonoBehaviour
 
     [SerializeField] [Min(5)]
     private int totalEnemies = 10;
+    [SerializeField]
+    private int enemiesLeft;
 
     [SerializeField] [Range(0, 50)]
     private int _poolSize = 5;
@@ -17,8 +18,14 @@ public class ObjectPool : MonoBehaviour
 
     private GameObject[] pool;
 
+    private CastleScript castleScript;
+
+    private bool gameOver = false;
+
     private void Awake()
     {
+        castleScript = FindObjectOfType<CastleScript>();
+        enemiesLeft = totalEnemies;
         PopulatePool();
     }
 
@@ -41,10 +48,14 @@ public class ObjectPool : MonoBehaviour
     
     private IEnumerator SpawnEnemy()
     {
-        while (true)
+        while (!gameOver)
         {
             yield return new WaitForSeconds(_spawnDelay);
-            EnableObjectInPool();
+
+            if (!gameOver)
+            {
+                EnableObjectInPool();
+            }
         }
     }
     
@@ -60,8 +71,30 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
+    public void EnemyDestroyed()
+    {
+        enemiesLeft -= 1;
+
+        if (enemiesLeft <= 0)
+        {
+            StartCoroutine(LevelComplete());
+        }
+    }
+
+    private IEnumerator LevelComplete()
+    {
+        gameOver = true;
+
+        yield return new WaitForSeconds(5f);
+
+        StartCoroutine(castleScript.LevelComplete());
+    }
+
+
     public void GameOver()
     {
+        gameOver = true;
+
         foreach (Transform child in transform)
         {
             Destroy(child.gameObject);

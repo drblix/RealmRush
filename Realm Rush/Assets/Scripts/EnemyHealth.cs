@@ -18,10 +18,12 @@ public class EnemyHealth : MonoBehaviour
     private int _currentHitPoints;
 
     private Enemy enemy;
+    private ObjectPool pool;
 
     private void Awake()
     {
         enemy = GetComponent<Enemy>();
+        pool = FindObjectOfType<ObjectPool>();
     }
 
     private void OnEnable()
@@ -40,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (_currentHitPoints <= 0)
         {
+            pool.EnemyDestroyed();
             enemy.RewardGold();
             _maxHitPoints += _difficultyRamp;
             gameObject.SetActive(false);
