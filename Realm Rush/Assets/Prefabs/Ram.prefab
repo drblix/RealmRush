@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldReward: 10
-  goldPenalty: 25
+  castleDamageAmount: 10
