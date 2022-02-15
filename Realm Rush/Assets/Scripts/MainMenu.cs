@@ -15,12 +15,17 @@ public class MainMenu : MonoBehaviour
     private GameObject customizationArea;
     [SerializeField]
     private GameObject storyText;
+    [SerializeField]
+    private GameObject speedChanger;
 
     [SerializeField]
     private TextMeshProUGUI playerName;
 
     [SerializeField]
     private AudioClip buttonClick;
+
+    [SerializeField] [Min(0.01f)]
+    private float scrollSpeed = 0.25f;
 
     private void Awake()
     {
@@ -57,29 +62,31 @@ public class MainMenu : MonoBehaviour
 
         customizationArea.SetActive(false);
         storyText.SetActive(true);
+        speedChanger.SetActive(true);
 
         StartCoroutine(ScrollStory());
     }
 
     private IEnumerator ScrollStory()
     {
-        storyText.transform.position = new Vector3(293.5f, -120f, 0f);
+        Transform textDestination = storyScreen.transform.Find("TextDestination");
 
-        while (storyText.transform.position.y < 1206f)
+        while (storyText.transform.position.y < textDestination.position.y)
         {
-            storyText.transform.Translate(0f, 1f, 0f);
-            
-            print(storyText.transform.position.y);
+            Vector2 newPosition = Vector2.MoveTowards(storyText.transform.position, textDestination.position, scrollSpeed);
+            storyText.transform.position = newPosition;
 
             yield return new WaitForEndOfFrame();
         }
 
         yield return new WaitForSeconds(2f);
 
-        storyText.SetActive(false);
-        customizationArea.SetActive(true);
-        storyScreen.SetActive(false);
-        mainScreen.SetActive(true);
+        SceneManager.LoadScene(0);
+    }
+
+    public void ScrollSpeedUpdate(float newSpeed)
+    {
+        scrollSpeed = newSpeed;
     }
 
     public void QuitGame()

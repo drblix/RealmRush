@@ -323,6 +323,7 @@
 "Assets/Scripts/BankScript.cs"
 "Assets/Scripts/CameraScript.cs"
 "Assets/Scripts/CastleScript.cs"
+"Assets/Scripts/ConsoleHandler.cs"
 "Assets/Scripts/CoordinateLabeler.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/EnemyHealth.cs"

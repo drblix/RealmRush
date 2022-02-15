@@ -20,18 +20,7 @@ public class CameraScript : MonoBehaviour
     private Vector3 forwardTransform;
     private Vector3 backTransform;
 
-    private readonly float[] levelXRestrictions = new float[]
-    {
-        // Level1
-        12.1f,
-        104.92f,
-    };
-    private readonly float[] levelZRestrictions = new float[]
-    {
-        // Level1
-        -44.6f,
-        27.7f,
-    };
+    private bool canMove = true;
 
     private void Awake()
     {
@@ -50,25 +39,28 @@ public class CameraScript : MonoBehaviour
 
     private void CheckInput()
     {
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (canMove)
         {
-            transform.Translate(rightTransform, Space.World);
-        }
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                transform.Translate(rightTransform, Space.World);
+            }
 
 
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(forwardTransform, Space.World);
-        }
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+            {
+                transform.Translate(forwardTransform, Space.World);
+            }
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(backTransform, Space.World);
-        }
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            {
+                transform.Translate(backTransform, Space.World);
+            }
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(leftTransform, Space.World);
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+                transform.Translate(leftTransform, Space.World);
+            }
         }
     }
 
@@ -94,5 +86,10 @@ public class CameraScript : MonoBehaviour
         leftTransform = cameraSpeed * Time.deltaTime * Vector3.left;
         forwardTransform = cameraSpeed * Time.deltaTime * Vector3.forward;
         backTransform = cameraSpeed * Time.deltaTime * Vector3.back;
+    }
+
+    public void ToggleMovement()
+    {
+        canMove = !canMove;
     }
 }
