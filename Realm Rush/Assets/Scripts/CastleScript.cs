@@ -24,6 +24,9 @@ public class CastleScript : MonoBehaviour
 
     private float currentCastleHealth;
 
+    private bool godMode = false;
+    public bool GodMode { get { return godMode; } }
+
     private void Awake()
     {
         objectPool = FindObjectOfType<ObjectPool>().transform;
@@ -33,14 +36,17 @@ public class CastleScript : MonoBehaviour
 
     public void DamageCastle(float amount)
     {
-        currentCastleHealth -= Mathf.Abs(amount);
-
-        if (currentCastleHealth <= 0)
+        if (!godMode)
         {
-            StartCoroutine(GameOver());
-        }
+            currentCastleHealth -= Mathf.Abs(amount);
 
-        UpdateDisplay();
+            if (currentCastleHealth <= 0)
+            {
+                StartCoroutine(GameOver());
+            }
+
+            UpdateDisplay();
+        }
     }
 
 
@@ -91,5 +97,10 @@ public class CastleScript : MonoBehaviour
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
 
         SceneManager.LoadScene(nextScene);
+    }
+
+    public void ToggleGodMode()
+    {
+        godMode = !godMode;
     }
 }

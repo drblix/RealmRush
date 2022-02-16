@@ -21,6 +21,7 @@ public class CoordinateLabeler : MonoBehaviour
         waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
         UpdateObjectName();
+        label.enabled = false;
     }
 
     private void Update()
