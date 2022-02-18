@@ -16104,7 +16104,7 @@ GameObject:
   - component: {fileID: 1136680245}
   m_Layer: 0
   m_Name: TowersPool
-  m_TagString: Untagged
+  m_TagString: TowersPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30365,6 +30365,14 @@ PrefabInstance:
       propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 5039373782337225190, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
+      propertyPath: m_text
+      value: Type "help" for commands...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5039373782337225211, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
 --- !u!1001 &5478215762543514523

@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     private bool towersMuted = false;
     public bool TowersMuted { get { return towersMuted; } }
 
-
+    private float oldScale = 1f;
     private bool gamePaused = false;
 
     private void Awake()
@@ -79,6 +79,11 @@ public class UIManager : MonoBehaviour
 
     public void ToggleSettings()
     {
+        if (Time.timeScale > 0f)
+        {
+            oldScale = Time.timeScale;
+        }
+
         buttonClick.Play();
 
         settingsMenu.SetActive(!settingsMenu.activeInHierarchy);
@@ -94,7 +99,7 @@ public class UIManager : MonoBehaviour
         {
             gamePaused = false;
             ToggleTiles(false);
-            Time.timeScale = 1f;
+            Time.timeScale = oldScale;
         }
     }
 

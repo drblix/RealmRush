@@ -93,4 +93,9 @@ public class TargetLocator : MonoBehaviour
 
         canFire = true;
     }
+
+    public void ChangeFireRate(float newAmount)
+    {
+        firingRate = newAmount;
+    }
 }

@@ -57,6 +57,11 @@ public class ConsoleHandler : MonoBehaviour
         Debug.Log(commandText);
         buttonSFX.Play();
 
+        if (commandText.Contains("help"))
+        {
+
+        }
+
         if (commandText.Contains("money"))
         {
             int amount;
@@ -119,7 +124,65 @@ public class ConsoleHandler : MonoBehaviour
                 return;
             }
 
+            if (amount < 0.1f)
+            {
+                StartCoroutine(DisplayError("Must be greater than 0.1"));
+                return;
+            }
+
+            StartCoroutine(DisplayMessage("Set timescale to: " + amount));
+
             Time.timeScale = amount;
+            return;
+        }
+
+        if (commandText.Contains("firerate"))
+        {
+            float amount;
+            string[] words = commandText.Split(' ');
+
+            // Checks if supplied value is a float
+            try
+            {
+                amount = Mathf.Abs(System.Convert.ToSingle(words[1]));
+            }
+            catch (System.Exception)
+            {
+                StartCoroutine(DisplayError("Value not a number"));
+                return;
+            }
+
+            if (amount < 0.4f || amount > 2.5f)
+            {
+                StartCoroutine(DisplayError("Amount out of bounds"));
+                return;
+            }
+
+            Transform towersPool = GameObject.FindGameObjectWithTag("TowersPool").transform;
+
+            if (amount > 0.4f && amount < 2.5f)
+            {
+                foreach (Transform child in towersPool)
+                {
+                    child.GetComponent<TargetLocator>().ChangeFireRate(amount);
+                }
+            }
+
+            StartCoroutine(DisplayMessage("Changed firerate to: " + amount));
+            return;
+        }
+
+        if (commandText.Contains("clear"))
+        {
+            Transform objectPool = GameObject.Find("ObjectPool").transform;
+
+            foreach (Transform child in objectPool)
+            {
+                child.gameObject.SetActive(false);
+            }
+
+            StartCoroutine(DisplayMessage("Cleared all enemies"));
+            return;
         }
 
         StartCoroutine(DisplayError("Inputted command is invalid"));
