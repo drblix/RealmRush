@@ -60,6 +60,12 @@ public class ConsoleHandler : MonoBehaviour
         Debug.Log(commandText);
         buttonSFX.Play();
 
+        if (!cheatsEnabled)
+        {
+            StartCoroutine(DisplayError("Cheats disabled"));
+            return;
+        }
+
         if (commandText == "help")
         {
             commandList.SetActive(true);
