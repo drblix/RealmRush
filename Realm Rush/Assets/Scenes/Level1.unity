@@ -30265,10 +30265,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5039373781406015765, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5039373781686080310, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -30365,14 +30361,6 @@ PrefabInstance:
       propertyPath: m_OnDeselect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 963194229}
-    - target: {fileID: 5039373782337225190, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
-      propertyPath: m_text
-      value: Type "help" for commands...
-      objectReference: {fileID: 0}
-    - target: {fileID: 5039373782337225211, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16998b3b0207c3b4e92a6aee80674008, type: 3}
 --- !u!1001 &5478215762543514523
@@ -30451,6 +30439,10 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 2944499589034050878, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6386309132405621137}
     - target: {fileID: 6189562846384011673, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -30545,6 +30537,11 @@ PrefabInstance:
       objectReference: {fileID: 708360003}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
+--- !u!1 &6189562845119812671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8137760850892547110, guid: 0cbcb8c825026c94b908fcf1ecd0ba1c, type: 3}
+  m_PrefabInstance: {fileID: 6189562845119812670}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6386309132405621136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30601,11 +30598,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386309131758964477, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}
-      propertyPath: totalEnemies
-      value: 15
-      objectReference: {fileID: 0}
+      propertyPath: startButton
+      value: 
+      objectReference: {fileID: 6189562845119812671}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}
+--- !u!114 &6386309132405621137 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6386309131758964477, guid: c45c5e6c7c7e3274abf1f63d92ea1fa3, type: 3}
+  m_PrefabInstance: {fileID: 6386309132405621136}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f5fb2c6b44bfb40852e314e129d821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &6902918444205657964
 MeshFilter:
   m_ObjectHideFlags: 0

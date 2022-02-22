@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectPool : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class ObjectPool : MonoBehaviour
 
     private GameObject[] pool;
 
+    [SerializeField]
+    private GameObject startButton;
+
     private CastleScript castleScript;
 
     private bool gameOver = false;
@@ -31,7 +35,12 @@ public class ObjectPool : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnEnemy());
+        int buildIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (buildIndex == 0 || buildIndex == 4) // Checks if scene is main menu or victory
+        {
+            StartCoroutine(SpawnEnemy());
+        }
     }
 
     private void PopulatePool()
@@ -45,7 +54,13 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    
+    public void StartGame()
+    {
+        startButton.SetActive(false);
+
+        StartCoroutine(SpawnEnemy());
+    }
+
     private IEnumerator SpawnEnemy()
     {
         while (!gameOver)
@@ -101,5 +116,10 @@ public class ObjectPool : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    public void EndlessMode()
+    {
+        enemiesLeft = 9999;
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ConsoleHandler : MonoBehaviour
@@ -10,6 +11,8 @@ public class ConsoleHandler : MonoBehaviour
 
     [SerializeField]
     private GameObject consoleUI;
+    [SerializeField]
+    private GameObject commandList;
 
     [SerializeField]
     private Button submitButton;
@@ -57,9 +60,12 @@ public class ConsoleHandler : MonoBehaviour
         Debug.Log(commandText);
         buttonSFX.Play();
 
-        if (commandText.Contains("help"))
+        if (commandText == "help")
         {
+            commandList.SetActive(true);
 
+            StartCoroutine(DisplayMessage("Opened help menu"));
+            return;
         }
 
         if (commandText.Contains("money"))
@@ -92,7 +98,7 @@ public class ConsoleHandler : MonoBehaviour
             return;
         }
 
-        if (commandText.Contains("toohard"))
+        if (commandText == "toohard")
         {
             if (!castleScript.GodMode)
             {
@@ -172,7 +178,7 @@ public class ConsoleHandler : MonoBehaviour
             return;
         }
 
-        if (commandText.Contains("clear"))
+        if (commandText == "clear")
         {
             Transform objectPool = GameObject.Find("ObjectPool").transform;
 
@@ -182,6 +188,41 @@ public class ConsoleHandler : MonoBehaviour
             }
 
             StartCoroutine(DisplayMessage("Cleared all enemies"));
+            return;
+        }
+
+        if (commandText.Contains("loadscene"))
+        {
+            int amount;
+            string[] words = commandText.Split(' ');
+
+            // Checks if supplied value is an integer
+            try
+            {
+                amount = Mathf.Abs(System.Convert.ToInt32(words[1]));
+            }
+            catch (System.Exception)
+            {
+                StartCoroutine(DisplayError("Value not an integer"));
+                return;
+            }
+
+            if (amount > 4)
+            {
+                StartCoroutine(DisplayError("Value out of bounds"));
+            }
+
+            SceneManager.LoadScene(amount);
+            return;
+        }
+
+        if (commandText == "endless")
+        {
+            ObjectPool objectPool = FindObjectOfType<ObjectPool>();
+
+            objectPool.EndlessMode();
+
+            StartCoroutine(DisplayMessage("Endless mode enabled!"));
             return;
         }
 
@@ -221,6 +262,16 @@ public class ConsoleHandler : MonoBehaviour
         placeholderText.text = originalText;
         inputField.interactable = true;
         submitButton.interactable = true;
+    }
+
+    public void TypeNoise()
+    {
+        buttonSFX.Play();
+    }
+
+    public void CloseList()
+    {
+        commandList.SetActive(false);
     }
 
     public void ToggleCheats(bool state)
